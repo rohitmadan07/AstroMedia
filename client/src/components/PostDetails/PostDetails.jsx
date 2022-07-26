@@ -66,8 +66,8 @@ const PostDetails = () => {
               <div style = {{margin:'20px', cursor:"pointer"}} onClick = {()=>openPost(_id)} key={_id}>
                 <Typography gutterBottom variant="h6">{title}</Typography>
                 <Typography gutterBottom variant="subtitle2">{name}</Typography>
-                <Typography gutterBottom variant="subtitle2">{message.length>30 ? message.split(' ').splice(0,30).join(' ') :message} <span className={classes.readMore}>....Read More</span></Typography>
-                <Typography gutterBottom variant="subtitle1">Likes:{likes.length} </Typography>
+                <Typography gutterBottom variant="subtitle2">{message?.length>30 ? message.split(' ').splice(0,30).join(' ') :message} <span className={classes.readMore}>....Read More</span></Typography>
+                <Typography gutterBottom variant="subtitle1">Likes:{likes?.length} </Typography>
                 <img src={selectedFile} width="200px" />
               </div>
             ))}
