@@ -1,7 +1,7 @@
 //To make api calls
 import axios from 'axios';
 
-const API = axios.create({baseURL:'http://localhost:5000'});
+const API = axios.create({baseURL:'https://astromedia.el.r.appspot.com/'});
 
 // const url = 'http://localhost:5000/posts'; //URL pointing to our backed route
 
